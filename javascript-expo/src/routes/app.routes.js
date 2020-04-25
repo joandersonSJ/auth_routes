@@ -7,7 +7,13 @@ const AppStack = createStackNavigator();
 export default function AuthRoutes() {
   return (
     <AppStack.Navigator>
-      <AppStack.Screen name="Dashboard" component={Dashboard} />
+      <AppStack.Screen
+        name="Dashboard"
+        component={Dashboard}
+        options={{
+          headerTitleAlign: "center",
+        }}
+      />
     </AppStack.Navigator>
   );
 }
